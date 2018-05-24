@@ -20,7 +20,7 @@ public class NamelessWarrior {
         /// hi 
         // hello
         
-        
+        int test;
         System.out.println("Does it work");
         
     }
