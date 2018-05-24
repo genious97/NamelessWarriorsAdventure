@@ -22,7 +22,7 @@ public class NamelessWarrior {
         
         int test;
         System.out.println("Does it work");
-        
+        // something
     }
     
 }
