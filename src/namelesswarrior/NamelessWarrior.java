@@ -17,12 +17,7 @@ public class NamelessWarrior {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        /// hi 
-        // hello
         
-        int test;
-        System.out.println("Does it work");
-        // something
     }
     
 }
