@@ -20,6 +20,9 @@ public class NamelessWarrior {
         /// hi 
         // hello
         
+        
+        System.out.println("Does it work");
+        
     }
     
 }
