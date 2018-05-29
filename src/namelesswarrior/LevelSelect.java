@@ -31,30 +31,17 @@ public class LevelSelect extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        canvas1 = new java.awt.Canvas();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        jLabel1.setBackground(new java.awt.Color(120, 120, 120));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/namelesswarrior/myimages/titlebgd.png"))); // NOI18N
         jLabel1.setText("jLabel1");
-        jLabel1.setMaximumSize(new java.awt.Dimension(979, 600));
-        jLabel1.setMinimumSize(new java.awt.Dimension(979, 600));
-        jLabel1.setPreferredSize(new java.awt.Dimension(1000, 600));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1958, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 20, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 345, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(750, 150, 34, 14);
+        getContentPane().add(canvas1);
+        canvas1.setBounds(850, 240, 170, 200);
+        canvas1.getAccessibleContext().setAccessibleParent(canvas1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -97,6 +84,7 @@ public class LevelSelect extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Canvas canvas1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
