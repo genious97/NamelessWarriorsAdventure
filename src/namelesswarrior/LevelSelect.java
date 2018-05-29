@@ -30,18 +30,8 @@ public class LevelSelect extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        canvas1 = new java.awt.Canvas();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(750, 150, 34, 14);
-        getContentPane().add(canvas1);
-        canvas1.setBounds(850, 240, 170, 200);
-        canvas1.getAccessibleContext().setAccessibleParent(canvas1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -84,7 +74,5 @@ public class LevelSelect extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Canvas canvas1;
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
