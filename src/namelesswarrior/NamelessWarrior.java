@@ -10,7 +10,6 @@ package namelesswarrior;
  * @author jessica.chagas237
  */
 public class NamelessWarrior {
-
     /**
      * @param args the command line arguments
      */
