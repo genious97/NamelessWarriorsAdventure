@@ -30,11 +30,53 @@ public class LevelSelect extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        LevelOneButton = new javax.swing.JButton();
+        LevelThreeButton = new javax.swing.JButton();
+        LevelTwoButton = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
+        LevelOneButton.setBackground(new java.awt.Color(204, 255, 204));
+        LevelOneButton.setText("Level One");
+        LevelOneButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LevelOneButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(LevelOneButton);
+        LevelOneButton.setBounds(30, 130, 110, 23);
+
+        LevelThreeButton.setBackground(new java.awt.Color(204, 255, 204));
+        LevelThreeButton.setText("Level Three");
+        getContentPane().add(LevelThreeButton);
+        LevelThreeButton.setBounds(310, 130, 110, 23);
+
+        LevelTwoButton.setBackground(new java.awt.Color(204, 255, 204));
+        LevelTwoButton.setText("Level Two");
+        getContentPane().add(LevelTwoButton);
+        LevelTwoButton.setBounds(170, 160, 110, 23);
+
+        jLabel2.setFont(new java.awt.Font("Lucida Console", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Please Select A Level");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(70, 10, 320, 20);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/namelesswarrior/myimages/titlebgd.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 490, 320);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void LevelOneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LevelOneButtonActionPerformed
+        // Once Button has been clicked it will allow for level one to open:
+         
+    }//GEN-LAST:event_LevelOneButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,9 +112,15 @@ public class LevelSelect extends javax.swing.JFrame {
             }
         });
         
+        
       
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton LevelOneButton;
+    private javax.swing.JButton LevelThreeButton;
+    private javax.swing.JButton LevelTwoButton;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
