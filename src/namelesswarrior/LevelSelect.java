@@ -75,7 +75,7 @@ public class LevelSelect extends javax.swing.JFrame {
 
     private void LevelOneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LevelOneButtonActionPerformed
         // Once Button has been clicked it will allow for level one to open:
-         
+       
     }//GEN-LAST:event_LevelOneButtonActionPerformed
 
     /**
