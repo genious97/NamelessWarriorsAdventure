@@ -19,9 +19,19 @@ public class StoryORLevel extends javax.swing.JFrame {
         storyModeBtn.setBackground(new java.awt.Color(204, 255, 204));
         storyModeBtn.setText("Story Mode");
         storyModeBtn.setActionCommand("startBtn");
+        storyModeBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                storyModeBtnActionPerformed(evt);
+            }
+        });
 
         LevelSelectBtn.setBackground(new java.awt.Color(204, 255, 204));
         LevelSelectBtn.setText("Level Select");
+        LevelSelectBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LevelSelectBtnActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Lucida Console", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -87,6 +97,20 @@ public class StoryORLevel extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void storyModeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_storyModeBtnActionPerformed
+        // Open tears
+        Level L = new Level();
+        L.setSize(499, 397);
+        L.setVisible(true);
+    }//GEN-LAST:event_storyModeBtnActionPerformed
+
+    private void LevelSelectBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LevelSelectBtnActionPerformed
+        // this opens up level select
+        LevelSelect ls = new LevelSelect();
+        ls.setSize(499, 397);
+        ls.setVisible(true);
+    }//GEN-LAST:event_LevelSelectBtnActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
