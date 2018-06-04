@@ -27,8 +27,8 @@ public class StoryORLevel extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        storyModeBtn = new javax.swing.JButton();
+        LevelSelectBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -37,28 +37,27 @@ public class StoryORLevel extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(204, 255, 204));
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Story Mode");
-        jButton1.setActionCommand("startBtn");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        storyModeBtn.setBackground(new java.awt.Color(204, 255, 204));
+        storyModeBtn.setText("Story Mode");
+        storyModeBtn.setActionCommand("startBtn");
+        storyModeBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                storyModeBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, -1, -1));
-        jButton1.getAccessibleContext().setAccessibleName("storySelectBtn");
+        getContentPane().add(storyModeBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, -1, -1));
+        storyModeBtn.getAccessibleContext().setAccessibleName("storySelectBtn");
 
-        jButton2.setBackground(new java.awt.Color(204, 255, 204));
-        jButton2.setText("Level Select");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        LevelSelectBtn.setBackground(new java.awt.Color(204, 255, 204));
+        LevelSelectBtn.setText("Level Select");
+        LevelSelectBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                LevelSelectBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 320, -1, -1));
-        jButton2.getAccessibleContext().setAccessibleName("levelSelectBtn");
-        jButton2.getAccessibleContext().setAccessibleDescription("");
+        getContentPane().add(LevelSelectBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 320, -1, -1));
+        LevelSelectBtn.getAccessibleContext().setAccessibleName("levelSelectBtn");
+        LevelSelectBtn.getAccessibleContext().setAccessibleDescription("");
 
         jLabel1.setFont(new java.awt.Font("Lucida Console", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -83,13 +82,15 @@ public class StoryORLevel extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void storyModeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_storyModeBtnActionPerformed
+         Level L = new Level();
+        L.setSize(499, 397);
+        L.setVisible(true);
+    }//GEN-LAST:event_storyModeBtnActionPerformed
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void LevelSelectBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LevelSelectBtnActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_LevelSelectBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -127,11 +128,11 @@ public class StoryORLevel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton LevelSelectBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel outsideLabel;
+    private javax.swing.JButton storyModeBtn;
     // End of variables declaration//GEN-END:variables
 }
