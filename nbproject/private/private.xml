@@ -3,9 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/D:/Programming%2012/Namless%20Warrior/NamelessWarriorsAdventure/src/namelesswarrior/Level.java</file>
             <file>file:/D:/Programming%2012/Namless%20Warrior/NamelessWarriorsAdventure/src/namelesswarrior/TitleScreen.java</file>
             <file>file:/D:/Programming%2012/Namless%20Warrior/NamelessWarriorsAdventure/src/namelesswarrior/LevelSelect.java</file>
+=======
+            <file>file:/C:/Users/jessica.chagas237/Documents/GitHub/NamelessWarriorsAdventure/src/namelesswarrior/TitleScreen.java</file>
+            <file>file:/C:/Users/jessica.chagas237/Documents/GitHub/NamelessWarriorsAdventure/src/namelesswarrior/LevelSelect.java</file>
+            <file>file:/C:/Users/jessica.chagas237/Documents/GitHub/NamelessWarriorsAdventure/src/namelesswarrior/StoryORLevel.java</file>
+            <file>file:/C:/Users/jessica.chagas237/Documents/GitHub/NamelessWarriorsAdventure/src/namelesswarrior/NamelessWarrior.java</file>
+>>>>>>> decc53f7d89e3b3ee8c577b382cc5ef0efdefff3
         </group>
     </open-files>
 </project-private>

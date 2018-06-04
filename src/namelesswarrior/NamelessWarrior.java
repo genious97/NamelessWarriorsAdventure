@@ -1,22 +1,25 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Name: NamelessWarrior
+ * Programmers: Sammie Smillie & Jessica Chagas
+ * Grade: 12
+ * Description: This program will run a side scroller game with three different levels
  */
 package namelesswarrior;
 
-/**
- *
- * @author jessica.chagas237
- */
+import javax.swing.JFrame;
+
 public class NamelessWarrior {
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-        
+ 
+        TitleScreen ts = new TitleScreen();
+        ts.setSize(499, 397);
+        ts.setVisible(true);
+
     }
-    
 }
+        
+        
+        
+ 
+    
+
