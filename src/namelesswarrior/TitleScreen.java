@@ -1,14 +1,11 @@
 package namelesswarrior;
-
 import java.awt.Image;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import javax.imageio.*;
 import javax.swing.*;
-
 public class TitleScreen extends javax.swing.JFrame {
-
     public TitleScreen() {
         initComponents();
     }
@@ -16,8 +13,8 @@ public class TitleScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        startBtn = new javax.swing.JButton();
+        quitBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -28,29 +25,29 @@ public class TitleScreen extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().setLayout(null);
 
-        jButton1.setBackground(new java.awt.Color(204, 255, 204));
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Start");
-        jButton1.setActionCommand("startBtn");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        startBtn.setBackground(new java.awt.Color(204, 255, 204));
+        startBtn.setForeground(new java.awt.Color(0, 0, 0));
+        startBtn.setText("Start");
+        startBtn.setActionCommand("startBtn");
+        startBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                startBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(60, 320, 62, 30);
-        jButton1.getAccessibleContext().setAccessibleName("startBtn");
+        getContentPane().add(startBtn);
+        startBtn.setBounds(60, 320, 62, 30);
+        startBtn.getAccessibleContext().setAccessibleName("startBtn");
 
-        jButton2.setBackground(new java.awt.Color(204, 255, 204));
-        jButton2.setText("Quit");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        quitBtn.setBackground(new java.awt.Color(204, 255, 204));
+        quitBtn.setText("Quit");
+        quitBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                quitBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2);
-        jButton2.setBounds(320, 320, 60, 30);
-        jButton2.getAccessibleContext().setAccessibleName("quitBtn");
+        getContentPane().add(quitBtn);
+        quitBtn.setBounds(320, 320, 60, 30);
+        quitBtn.getAccessibleContext().setAccessibleName("quitBtn");
 
         jLabel1.setFont(new java.awt.Font("Lucida Console", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -79,36 +76,19 @@ public class TitleScreen extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void startBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startBtnActionPerformed
+//Game will open StoryORLevel select if "Start" is pressed
+        StoryORLevel sOl = new StoryORLevel();
+        sOl.setSize(499, 397);
+        sOl.setVisible(true);
+    }//GEN-LAST:event_startBtnActionPerformed
 
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    
+    private void quitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitBtnActionPerformed
+//Game will close if "Quit" is pressed
+           System.exit(0);
+    }//GEN-LAST:event_quitBtnActionPerformed
+  
     public static void main(String args[]) {
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -134,16 +114,13 @@ public class TitleScreen extends javax.swing.JFrame {
             }
         });
     }
-
-
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel outsideLabel;
+    private javax.swing.JButton quitBtn;
+    private javax.swing.JButton startBtn;
     // End of variables declaration//GEN-END:variables
 }
