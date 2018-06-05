@@ -47,17 +47,27 @@ public class LevelSelect extends javax.swing.JFrame {
             }
         });
         getContentPane().add(LevelOneButton);
-        LevelOneButton.setBounds(30, 130, 110, 23);
+        LevelOneButton.setBounds(30, 130, 110, 26);
 
         LevelThreeButton.setBackground(new java.awt.Color(204, 255, 204));
         LevelThreeButton.setText("Level Three");
+        LevelThreeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LevelThreeButtonActionPerformed(evt);
+            }
+        });
         getContentPane().add(LevelThreeButton);
-        LevelThreeButton.setBounds(310, 130, 110, 23);
+        LevelThreeButton.setBounds(310, 130, 110, 26);
 
         LevelTwoButton.setBackground(new java.awt.Color(204, 255, 204));
         LevelTwoButton.setText("Level Two");
+        LevelTwoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LevelTwoButtonActionPerformed(evt);
+            }
+        });
         getContentPane().add(LevelTwoButton);
-        LevelTwoButton.setBounds(170, 160, 110, 23);
+        LevelTwoButton.setBounds(170, 160, 110, 26);
 
         jLabel2.setFont(new java.awt.Font("Lucida Console", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -68,7 +78,7 @@ public class LevelSelect extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/namelesswarrior/myimages/titlebgd.png"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 490, 320);
+        jLabel1.setBounds(0, 0, 450, 320);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -77,6 +87,16 @@ public class LevelSelect extends javax.swing.JFrame {
         // Once Button has been clicked it will allow for level one to open:
        
     }//GEN-LAST:event_LevelOneButtonActionPerformed
+
+    private void LevelTwoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LevelTwoButtonActionPerformed
+      //Once Button has been clicked it will allow for level two to open
+        
+    }//GEN-LAST:event_LevelTwoButtonActionPerformed
+
+    private void LevelThreeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LevelThreeButtonActionPerformed
+        //Once Button has been clicked it will allow for level three to open 
+        
+    }//GEN-LAST:event_LevelThreeButtonActionPerformed
 
     /**
      * @param args the command line arguments

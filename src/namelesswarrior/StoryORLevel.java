@@ -1,5 +1,10 @@
 package namelesswarrior;
 public class StoryORLevel extends javax.swing.JFrame {
+//Variable Declaration
+    Level L = new Level();
+    LevelSelect ls = new LevelSelect();
+    StoryORLevel sOl = new StoryORLevel();
+    
     public StoryORLevel() {
         initComponents();
     }
@@ -100,16 +105,16 @@ public class StoryORLevel extends javax.swing.JFrame {
 
     private void storyModeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_storyModeBtnActionPerformed
         // Open tears
-        Level L = new Level();
         L.setSize(499, 397);
         L.setVisible(true);
+        sOl.setVisible(false);
     }//GEN-LAST:event_storyModeBtnActionPerformed
 
     private void LevelSelectBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LevelSelectBtnActionPerformed
         // this opens up level select
-        LevelSelect ls = new LevelSelect();
-        ls.setSize(499, 397);
+        ls.setSize(451, 300);
         ls.setVisible(true);
+        sOl.setVisible(false);
     }//GEN-LAST:event_LevelSelectBtnActionPerformed
 
     public static void main(String args[]) {
