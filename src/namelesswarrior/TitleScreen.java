@@ -5,10 +5,15 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import javax.imageio.*;
 import javax.swing.*;
+
+
 public class TitleScreen extends javax.swing.JFrame {
-    public TitleScreen() {
-        initComponents();
-    }
+   int SORQ;
+    
+   public TitleScreen(){
+       initComponents();
+   }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -17,9 +22,8 @@ public class TitleScreen extends javax.swing.JFrame {
         quitBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        outsideLabel = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        outsideLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -61,33 +65,40 @@ public class TitleScreen extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(20, -30, 510, 200);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/namelesswarrior/myimages/dude.png"))); // NOI18N
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(210, 230, 50, 60);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/namelesswarrior/myimages/dude.png"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(200, 200, 60, 90);
 
         outsideLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/namelesswarrior/myimages/titlebgd.png"))); // NOI18N
         getContentPane().add(outsideLabel);
         outsideLabel.setBounds(0, 0, 483, 397);
-
-        jLabel4.setText("jLabel4");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(180, 220, 41, 16);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void startBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startBtnActionPerformed
 //Game will open StoryORLevel select if "Start" is pressed
-        StoryORLevel sOl = new StoryORLevel();
-        sOl.setSize(499, 397);
-        sOl.setVisible(true);
+        SORQ = 1;
+        this.dispose();
     }//GEN-LAST:event_startBtnActionPerformed
 
     private void quitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitBtnActionPerformed
 //Game will close if "Quit" is pressed
-           System.exit(0);
+           SORQ = 2;
+           this.dispose();
     }//GEN-LAST:event_quitBtnActionPerformed
   
+    public int getSORQ(){
+        return SORQ;
+    }
+    
+    
+    
+    
+    
+    
+    
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -117,10 +128,11 @@ public class TitleScreen extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel outsideLabel;
     private javax.swing.JButton quitBtn;
     private javax.swing.JButton startBtn;
     // End of variables declaration//GEN-END:variables
+
+    
 }
