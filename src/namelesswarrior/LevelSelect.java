@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 
 public class LevelSelect extends javax.swing.JFrame {
 
-    int level=0;
+    int level= 0;
     
     
     public LevelSelect() {
@@ -75,18 +75,20 @@ public class LevelSelect extends javax.swing.JFrame {
 
     private void LevelOneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LevelOneButtonActionPerformed
         // Once Button has been clicked it will allow for level one to open:
-       // levelChoice = "1";
-       
+       level = 1;
+       this.dispose();
     }//GEN-LAST:event_LevelOneButtonActionPerformed
 
     private void LevelTwoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LevelTwoButtonActionPerformed
       //Once Button has been clicked it will allow for level two to open
-        
+        level = 2;
+        this.dispose();
     }//GEN-LAST:event_LevelTwoButtonActionPerformed
 
     private void LevelThreeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LevelThreeButtonActionPerformed
         //Once Button has been clicked it will allow for level three to open 
-        
+        level = 3;
+        this.dispose();
     }//GEN-LAST:event_LevelThreeButtonActionPerformed
 
     public int getLevel(){

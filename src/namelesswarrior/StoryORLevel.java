@@ -69,7 +69,7 @@ public class StoryORLevel extends javax.swing.JFrame {
 
     private void LevelSelectBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LevelSelectBtnActionPerformed
         // this opens up level select
-       choice = 2;
+        choice = 2;
         this.dispose();
     }//GEN-LAST:event_LevelSelectBtnActionPerformed
 public int getStoryLevel(){

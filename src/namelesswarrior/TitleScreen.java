@@ -79,14 +79,13 @@ public class TitleScreen extends javax.swing.JFrame {
 
     private void startBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startBtnActionPerformed
 //Game will open StoryORLevel select if "Start" is pressed
-        SORQ = 1;
+       SORQ = 1;
         this.dispose();
     }//GEN-LAST:event_startBtnActionPerformed
 
     private void quitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitBtnActionPerformed
 //Game will close if "Quit" is pressed
            SORQ = 2;
-           this.dispose();
     }//GEN-LAST:event_quitBtnActionPerformed
   
     public int getSORQ(){
